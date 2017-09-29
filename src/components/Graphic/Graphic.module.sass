@@ -1,0 +1,23 @@
+.Graphic
+  margin: 0 auto
+
+.GraphicCell
+  margin: 1rem
+  background-color: lightgray
+  padding: 5px
+  //width: calc(100% - 2rem)
+
+.GraphicCell img
+  display: block
+  //margin: 0 auto
+  width: 100%
+
+@media screen and (min-width: 600px)
+  .GraphicCell
+    width: calc(40vw - 2rem)
+    max-width: 500px 
+ 
+@media screen and (min-width: 1000px)
+  .GraphicCell
+    width: calc(30vw - 2rem)
+    max-width: calc(350px - 2rem)

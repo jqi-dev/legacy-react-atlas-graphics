@@ -1,20 +1,16 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Graphic from '../Graphic/Graphic'
 
 class StaticGraphic extends React.Component {
 
-	constructor(props) {
-		super(props)
-		console.log(this.props)
-	}
-
-
 	render() {
 		return (
-			<div className="static-graphic">
-				<h1>I'm static :(</h1>
-				{ this.props.children }
-			</div>
+			<Graphic>
+				<div className="static-graphic">
+					<h1>I'm static :(</h1>
+					{ this.props.children }
+				</div>
+			</Graphic>
 		)
 	}	
 }

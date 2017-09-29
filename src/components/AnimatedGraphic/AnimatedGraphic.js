@@ -1,19 +1,21 @@
 import React from 'react'
+import Graphic from '../Graphic/Graphic'
+import styles from './AnimatedGraphic.module.sass'
 
 class AnimatedGraphic extends React.Component {
-
-	constructor(props) {
-		super(props)
-		console.log(this.props)
+	
+	announceString = () => {
+		return "I'm animated!"
 	}
-
 
 	render() {
 		return (
-			<div className="animated-graphic">
-				<h1>I'm animated!</h1>
-				{ this.props.children }
-			</div>
+			<Graphic>
+				<div className={ styles.AnimatedGraphic }>
+				<h3>{ this.announceString() }</h3>
+					{ this.props.children }
+				</div>
+			</Graphic>
 		)
 	}	
 }

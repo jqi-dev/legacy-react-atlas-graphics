@@ -1,4 +1,6 @@
 import React from 'react'
+import { TweenMax } from 'gsap'
+import GSAP from 'react-gsap-enhancer'
 
 class BandStructure extends React.Component {
 	

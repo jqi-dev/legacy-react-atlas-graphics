@@ -8,7 +8,7 @@ class KickedRotor extends React.Component {
 	render() {
 		return (
 			<AnimatedGraphic>
-				<img src={ rotor_image }/>
+				<img src={ rotor_image } />
 			</AnimatedGraphic>
 		)
 	}
