@@ -1,0 +1,130 @@
+.BandStructure 
+  font-family: Arial, sans-serif
+
+.gsap-container
+  width: 90%
+  max-width: 600px 
+  /*Not necessary, useful for testing*/
+  position: relative
+  margin: 0 auto
+
+.gsap-image-label 
+  position: absolute
+  width: 100%
+  z-index: 0
+  margin-left: 0%
+
+.gsap-image 
+  position: absolute
+  width: 100%
+
+.gsap-image-relative-behind
+  width: 100%
+  //z-index: -10
+  opacity: 0.5
+  //position: relative
+
+.behind
+  z-index: -10
+
+.gsap-image-behind
+  position: absolute
+  width: 100%
+  opacity: 0.5
+  z-index: -10
+
+#band_mask
+  z-index: -9
+
+.linebounds
+  height: 95%
+  width: 100%
+  margin-top: 0
+  position: absolute
+
+.button-container
+  text-align: center
+
+.caption
+  width: 100%
+  max-width: 800px
+  position: relative
+  margin: 0 auto
+
+.caption-text.first
+  opacity: 1
+
+.caption-text
+  position: absolute
+  font-size: 15px
+  margin-top: 0px
+  //opacity: 0
+
+.caption-text.position
+  position: relative
+  margin-top: 10px
+
+.caption-paragraph
+  width: 100%
+  max-width: 550px
+  //position: relative
+  margin: 0 auto
+
+/* General button style (reset) */
+.btn
+  border: none
+  font-family: inherit
+  font-size: inherit
+  color: inherit
+  background: none
+  cursor: pointer
+  padding: 10px 20px
+  display: inline-block
+  margin: 10px 5px
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-weight: 100
+  outline: none
+  position: relative
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  transition: all 0.3s
+
+.btn:after
+  content: ''
+  position: absolute
+  z-index: -1
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  transition: all 0.3s
+
+/* Button 1a */
+.btn:hover, .btn:active
+  color: #fff
+  background: #1e5374
+
+.selected
+  color: #fff
+  background: #1e5374
+  border: 2px solid #1e5374
+
+.disabled
+  border: 2px solid #1e5374
+  color: #1e5374
+  background: #fff
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before
+  font-family: 'icomoon'
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  position: relative
+  -webkit-font-smoothing: antialiased
