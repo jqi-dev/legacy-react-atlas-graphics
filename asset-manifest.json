@@ -1,7 +1,17 @@
 {
-  "main.css": "static/css/main.b13cc20a.css",
-  "main.css.map": "static/css/main.b13cc20a.css.map",
-  "main.js": "static/js/main.04cc15fb.js",
-  "main.js.map": "static/js/main.04cc15fb.js.map",
-  "static/media/kicked_rotor_web.gif": "static/media/kicked_rotor_web.a089c954.gif"
+  "main.css": "static/css/main.dd29aac8.css",
+  "main.css.map": "static/css/main.dd29aac8.css.map",
+  "main.js": "static/js/main.d61849fd.js",
+  "main.js.map": "static/js/main.d61849fd.js.map",
+  "static/media/band_label.svg": "static/media/band_label.3dd2c3b4.svg",
+  "static/media/bluepath-01.svg": "static/media/bluepath-01.23a60f8e.svg",
+  "static/media/bluepath_interior.svg": "static/media/bluepath_interior.8ff323f1.svg",
+  "static/media/gap_label.svg": "static/media/gap_label.964bfdd6.svg",
+  "static/media/graph-01.svg": "static/media/graph-01.1b514e45.svg",
+  "static/media/graph_back-01.svg": "static/media/graph_back-01.27349afe.svg",
+  "static/media/greenpath.svg": "static/media/greenpath.afbe8891.svg",
+  "static/media/greenpath_interior.svg": "static/media/greenpath_interior.b2c7005d.svg",
+  "static/media/kicked_rotor_web.gif": "static/media/kicked_rotor_web.a089c954.gif",
+  "static/media/labels.svg": "static/media/labels.0d46173c.svg",
+  "static/media/mask-01.svg": "static/media/mask-01.59ee6229.svg"
 }
