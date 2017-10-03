@@ -23,15 +23,14 @@ class BandStructure extends React.Component {
 		super(props)
 
 		this.explanations = {
-			insulator: 'In an <b>insulator</b>, electrons fill up a band right to the brim. There is a gap—a region of energy that no electron in the material can inhabit—to the next band. Unless electrons receive a big kick, they cannot reach the higher band. This keeps them from conducting current, since a voltage applied across the material will not change electron behavior.',
-			conductor: 'In a <b>conductor</b>, electrons partially fill an energy band. This means there are slightly higher energies, available just out of reach, that electrons can jump to if they get a small kick. The voltage from a battery can provide that kick, causing the material to conduct.',
-			semiconductor: 'A <b>semiconductor</b> is a lot like an insulator, but the gap between bands is much smaller. It\'s possible for a voltage to bridge this gap, promoting some electrons to the higher band and causing a current to flow. But take that impetus away and the material acts like an insulator again. This switching behavior is what drives the digital transistors that form the backbone of our electronic gadgets.',
-			semimetal: '<b>Semimetals</b> are unique in that they have bands that actually touch. Although electrons still only fill the lower band, mere thermal energy, from the temperature of the semimetal\'s surroundings, can give electrons the miniscule kick they need to reach the higher band. For Weyl semimetals, the bands around the touching point have a certain shape that makes excitations of electrons behave like Weyl fermions.'
+			insulator: 'In an insulator, electrons fill up a band right to the brim. There is a gap—a region of energy that no electron in the material can inhabit—to the next band. Unless electrons receive a big kick, they cannot reach the higher band. This keeps them from conducting current, since a voltage applied across the material will not change electron behavior.',
+			conductor: 'In a conductor, electrons partially fill an energy band. This means there are slightly higher energies, available just out of reach, that electrons can jump to if they get a small kick. The voltage from a battery can provide that kick, causing the material to conduct.',
+			semiconductor: 'A semiconductor is a lot like an insulator, but the gap between bands is much smaller. It\'s possible for a voltage to bridge this gap, promoting some electrons to the higher band and causing a current to flow. But take that impetus away and the material acts like an insulator again. This switching behavior is what drives the digital transistors that form the backbone of our electronic gadgets.',
+			semimetal: 'Semimetals are unique in that they have bands that actually touch. Although electrons still only fill the lower band, mere thermal energy, from the temperature of the semimetal\'s surroundings, can give electrons the miniscule kick they need to reach the higher band. For Weyl semimetals, the bands around the touching point have a certain shape that makes excitations of electrons behave like Weyl fermions.'
 		}
 					
 		this.state = {
-			currentSelection: 'insulator',
-			selectionText: this.explanations.insulator
+			currentSelection: 'insulator'
 		}
 
 		this.changeSelection = this.changeSelection.bind(this)
@@ -41,8 +40,7 @@ class BandStructure extends React.Component {
 		var id = e.currentTarget.id
 
 		this.setState({
-			currentSelection: id,
-			selectionText: this.explanations[id] 
+			currentSelection: id
 		})
 	}
 	
@@ -73,7 +71,7 @@ class BandStructure extends React.Component {
 					    <button className={ styles.btn } selected="disabled" id="semimetal" onClick={ this.changeSelection }>Semimetal</button>
 					  </div>
 						<div className={ styles['caption-paragraph'] }>
-							<p className={ styles['caption-text'] }>{ this.state.selectionText }</p>
+							<p className={ styles['caption-text'] }>{ this.explanations[this.state.currentSelection] }</p>
 					  </div>
 					</div>	
 				</div>
